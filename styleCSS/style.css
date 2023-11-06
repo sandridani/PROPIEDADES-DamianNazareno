@@ -1,0 +1,94 @@
+body{
+    background-color: black;
+    
+}
+header{
+    background-color: red;
+    
+    padding: 20px;
+    text-align: center;
+    
+}
+
+header a{
+    text-align: center justify;
+    padding: 30px;
+    margin: 30px;
+    color: aliceblue;
+
+}
+
+.principal{
+    size: 600px;
+    
+    text-align: center;
+    padding: 20px;
+    margin: 30px;
+    color: black;
+     
+}
+
+
+
+.tua p{
+    text-align: center;
+    color: black solid;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 60px;  
+    
+}
+
+select{
+    font-size: 25px;
+    background-color: red;
+    color: aliceblue;
+
+    text-align: center justify;
+}
+section{
+    size: 600px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    padding: 20px;
+    color: black;
+    font-weight: bold;
+    text-align: center;
+    
+
+}
+
+.propiedades-destacadas{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    padding: 20px;
+    color: black solid;
+    font-weight: bold;
+    text-align: center;
+
+}
+
+.body{
+    background-image: url(../imagenes/arq\ copia.jpg);
+    background-repeat: no-repeat;
+    /*background-attachment: fixed;*/
+    padding: 20px;
+    margin: 20px;
+    position: relative;
+    background-size: cover;
+    
+}
+
+
+footer{
+    background-color: red;
+    color: aliceblue;
+    text-align: center;
+}
+.contacto{
+    width: 30px;
+    padding: 10px;
+
+}
+.logonombre{
+    width: 200px;
+}
