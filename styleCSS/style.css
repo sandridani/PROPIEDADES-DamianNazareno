@@ -28,6 +28,9 @@ header a{
      
 }
 
+.cuerpoMedio{
+    background-color: black;
+}
 
 
 .tua p{
@@ -91,4 +94,17 @@ footer{
 }
 .logonombre{
     width: 200px;
+}
+
+#padreDePropDestacadas{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.card{
+    padding: 10px;
+    margin: 20px;
+    display: flex;
+   
 }
