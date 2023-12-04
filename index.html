@@ -5,8 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DAMIAN NAZARENO Propiedades</title>
-    <link rel="icon" href="imagenes/casadorada.png" type="image/x-icon">
+    <link rel="icon" href="imagenes/casadorada logo.png" type="image/x-icon">
     <link rel="stylesheet" href="styleCSS/style.css">
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+
     <!-- Versión más reciente de Bootstrap desde CDN -->
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
 </head>
@@ -14,98 +16,165 @@
 <body>
     <header>
         <nav>
-            <a href="#">Nosotros</a>
-            <a href="#">Lotes</a>
-            <a href="#">Propiedades</a>
-            <a href="#">Tasaciones</a>
-            <a href="#">Contacto</a>
+            <ul class="nav nav-pills nav-fill">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="index.html" style="color:black; font-weight:bold; background-color :aliceblue; border:2px solid red;" >Nosotros</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" style="color:aliceblue; font-weight:bold;" href="lote.html">Lotes</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" style="color:aliceblue; font-weight:bold;" href="casa.html">Propiedades</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" style="color:aliceblue; font-weight:bold;" href="tasacion.html">Tasaciones</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" style="color:aliceblue; font-weight:bold;" href="contacto.html">Contactanos</a>
+                </li>
+            </ul> 
         </nav>
     </header>
+
+    
+
+
+
+
+
+
     <div class="cuerpoMedio">
       <div class="body">
         <div class="principal">
             <div class="tua">
-            <p class="nombre-damian"><b>DAMIAN NAZARENO</b></p>
-            <p class="nombre-damian"><b>PROPIEDADES</b></p>
+            <h1 class="nombre-damian"><b>DAMIAN NAZARENO</b></h1>
+            <h2 class="nombre-damian"><b>PROPIEDADES</b></h2>
             </div>
-            <br><br><br>
+            <br><br><br><br>
 
-            <select name="tipo" id="tipo-prop">
-                <option value="tipo">-tipo propiedad-</option>
-                <option value="casa">Casa</option>
-                <option value="departamento">Departamento</option>
-                <option value="lote">Lote</option>
-                <option value="alquiler">Alquiler</option>
-            </select>
-            <br><br><br>
+            <div class="dropdown">
+                <a class="btn btn-secondary dropdown-toggle" style="border:2px solid red; background-color: black;" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                  Tipo de Propiedad
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                  <li><a class="dropdown-item" href="casa.html" >Propiedad</a></li>
+                  <li><a class="dropdown-item" href="departamento.html" onclick="mostrarHojaDepartamento()">Departamento</a></li>
+                  <li><a class="dropdown-item" href="lote.html" onclick="">Lote</a></li>
+                  <li><a class="dropdown-item" href="alquiler.html" onclick="mostrarHojaAlquiler()">Alquiler</a></li>
+                </ul>
+              </div>
+
+              <!--en este espacio se vera la informacion del onclick() del "tipo de propiedad" -->
+              <div id="hojaSecundariaDepartamento" style="display: none;">
+                <!-- Contenido de la hoja secundaria -->
+                <p>Aqui esta el listado de Departamentos en cartera.</p>
+                <!-- Puedes agregar más contenido según tus necesidades -->
+              </div>
+              <div id="hojaSecundariaAlquiler" style="display: none;">
+                <!-- Contenido de la hoja secundaria -->
+                <p>Aqui esta el listado de Departamentos en cartera.</p>
+                <!-- Puedes agregar más contenido según tus necesidades -->
+              </div>
+
+            <br><br><br><br><br>
         </div>
 
-        <section>
-            <h4>Nuestra Mision</h4>
+        <section><b>
+            <h3><b>Nuestra Mision</b></h3>
             <p>Facilitar la realización de sueños y proyectos de nuestros clientes al proporcionar servicios inmobiliarios de alta calidad, centrados en la transparencia, la integridad y la excelencia. Nos esforzamos por ser un aliado confiable en el proceso de compra, venta o alquiler de propiedades, brindando asesoramiento experto y soluciones personalizadas que superen las expectativas de nuestros clientes. </p>
-            <br><br>
-            <h4>Nuestra Vision</h4>
-            <p>Ser reconocidos como líderes en el mercado inmobiliario, distinguiéndonos por la innovación, la ética empresarial y la creación de valor sostenible. Buscamos ser la primera opción para aquellos que buscan servicios inmobiliarios confiables y eficientes, y aspiramos a contribuir al desarrollo sostenible de comunidades a través de proyectos inmobiliarios que mejoren la calidad de vida.</p>
-        </section>
-        <br><br><br>
+            <br><br><br><br>
+            <h3><b>Nuestra Vision</b></h3>
+            <p>Ser reconocidos como líderes en el mercado inmobiliario, distinguiéndonos por la innovación, la ética empresarial y la creación de valor sostenible. Buscamos ser la primera opción para aquellos que buscan servicios inmobiliarios confiables y eficientes, y aspiramos a contribuir al desarrollo sostenible de comunidades a través de proyectos inmobiliarios que mejoren la calidad de vida.</p></b>
+        </section><br>
+
+
       </div>
-      <h4 style="text-align: center; color: aliceblue;" ><b>Propiedades Destacadas</b></h4><br><br>
+      <div style="background-color: black;">
+      <br>
+      <h3 style="text-align: center; color:aliceblue;" ><b> Destacados </b></h3><br>
         <div class="d-flex flex-wrap" id="padreDePropDestacadas">
-            
-            <div class="card" style="width: 18rem;">
-                <img src="/imgProp/loteDelPilar.JPEG" class="card-img-top" alt="vista aerea del lote">
-                <div class="card-body">
-                  <h5 class="card-title"><b>Lote en Countries de Pilar</b></h5>
-                  <p class="card-text">Superficie total: 800 m²</p>
-                  <p class="card-text">Codigo:0001</p>
-                  <p class="card-text"><b>U$D $135.000</b></p>
-                  
-                  <button type="button" class="btn btn-info" id="info0001">Mas Info</button>
-                </div>
-            </div>
 
 
-            <div class="card" style="width: 18rem;">
-                <img src="/imgProp/deptoCarlosPaz.JPEG" class="card-img-top" alt="Departamentos Carlos Paz">
+            <div class="card" style="width: 18rem; border:2px solid red;">
+                <img src="imgProp/deptoCarlosPaz.JPEG" class="card-img-top" alt="Departamentos Carlos Paz">
                 <div class="card-body">
                   <h5 class="card-title"><b>Departamentos Carlos Paz</b></h5>
                   <p class="card-text">Superficie Cubierta: 235 m²</p>
                   <p class="card-text">Codigo:0003</p>
-                  <p class="card-text"><b>U$D $53.000</b></p>
+                  <p class="card-text"><b>U$D $78.000</b></p>
                   
-                  <button type="button" class="btn btn-info" id="info0003">Mas Info</button>
+                  <div class="card-body text-center">
+                    <button type="button" class="btn btn-dark" style="color:aliceblue; border:2px solid red; background-color: black;" onclick="mostrarDestacado1()">Mas Info</button>
+                  </div>
                 </div>
             </div>
 
+            <div class="card" style="width: 18rem; border:2px solid red;">
+                <img src="imgProp/loteDelPilar.JPEG" class="card-img-top" alt="vista aerea del lote">
+                <div class="card-body">
+                  <h5 class="card-title"><b>Lote en Countries de Pilar</b></h5>
+                  <p class="card-text">Superficie total: 800 m²</p>
+                  <p class="card-text">Codigo:0001</p>
+                  <p class="card-text"><b>U$D $188.000</b></p>
+                  <div class="card-body text-center">
+                   <button type="button" class="btn btn-dark" id="info0001" style="color:aliceblue; border:2px solid red; background-color: black;" >Mas Info</button>
+                  </div>
+                </div>
+            </div> 
 
-            <div class="card" style="width: 18rem;">
-                <img src="/imgProp/casaCerro.JPEG" class="card-img-top" alt="casa cerro">
+
+            <div class="card" style="width: 18rem; border:2px solid red;">
+                <img src="imgProp/casaCerro.JPEG" class="card-img-top" alt="casa cerro">
                 <div class="card-body">
                   <h5 class="card-title"><b>Propiedad en Cerro de las Rosas</b></h5>
                   <p class="card-text">Superficie cubierta: 188 m²</p>
                   <p class="card-text">Codigo:0008</p>
                   <p class="card-text"><b>U$D $240.000</b></p>
-                  <button type="button" class="btn btn-info" id="info0008">Mas Info</button>
+                  
+                  <div class="card-body text-center">
+                    <button type="button" class="btn btn-dark" id="info0001" style="color:aliceblue; border:2px solid red; background-color: black;" >Mas Info</button>
+                  </div>
                 </div>
+            </div>
+
+            <!--en este espacio se vera la informacion del onclick() del "tipo de propiedad" -->
+            <div id="infoDestacado1" style="display: none;">
+            
+              <!-- Puedes agregar más contenido según tus necesidades -->
+            </div>
+            <div id="infoDestacado2" style="display: none;">
+            
+              <!-- Puedes agregar más contenido según tus necesidades -->
+            </div>
+            <div id="infoDestacado3" style="display: none;">
+            
+              <!-- Puedes agregar más contenido según tus necesidades -->
             </div>
 
     
         </div>
+      </div>
     </div>
 
     <footer>
         <img src="imagenes/casadorada logo.png" alt="logo" class="logonombre"><br>
-        <p>Contactanos:</p>
-        <a href=""><img src="imagenes/WhatsApp.svg.webp" alt="WhatsApp" class="contacto"></a>
-        <a href=""><img src="imagenes/gmail.png" alt="gmail" class="contacto"></a>
-        <a href=""><img src="imagenes/YouTube_social_white_square_(2017).svg.webp" alt="YouTube_social_white_square_"
-                class="contacto"></a>
-        <a href=""><img src="imagenes/Facebook.png" alt="Facebook" class="contacto"></a>
-        <a href=""><img src="imagenes/Instagram.svg.webp" alt="instagram" class="contacto"></a>
+        
+        <a href="https://api.whatsapp.com/send?phone=543517027768&text=Hola%20Damián,%20me%20gustaria%20saber" target="_blank"><img src="imagenes/WhatsApp.svg.webp" alt="contactar por WhatsApp" class="contacto"></a>
+        <a href="https://www.youtube.com/@damiangomez333?si=7roMVpQ4KexD0OZg" target="_blank"><img src="imagenes/YouTube_social_white_square_(2017).svg.webp" alt="Visitar canal de YouTube" class="contacto"></a>
+        <a href="https://www.facebook.com/damian.gomez.5872?mibextid=gik2fB" target="_blank"><img src="imagenes/Facebook.png" alt="Visitar perfil de Facebook" class="contacto"></a>
+        <a href="https://www.instagram.com/damian.ngh/" target="_blank"><img src="imagenes/Instagram.svg.webp" alt="Visitar perfil de Instagram" class="contacto"></a>
     </footer>
     <!-- Scripts de Bootstrap al final del body -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="/javascript/javaScript.js"></script>
+    
+    <script src="enviar_formulario.js"></script>
+  
+
 </body>
 
 </html>
+
+
+
+

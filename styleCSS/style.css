@@ -1,35 +1,18 @@
 body{
     background-color: black;
-    
 }
+
 header{
-    background-color: red;
-    
+    background-color: black;
     padding: 20px;
-    text-align: center;
-    
-}
-
-header a{
-    text-align: center justify;
-    padding: 30px;
-    margin: 30px;
-    color: aliceblue;
-
 }
 
 .principal{
     size: 600px;
-    
     text-align: center;
     padding: 20px;
     margin: 30px;
     color: black;
-     
-}
-
-.cuerpoMedio{
-    background-color: black;
 }
 
 
@@ -71,29 +54,27 @@ section{
 }
 
 .body{
-    background-image: url(../imagenes/arq\ copia.jpg);
+    background-image: url(https://i.pinimg.com/564x/13/dc/fc/13dcfc9ae298195f8d2416cdbdffae17.jpg);
     background-repeat: no-repeat;
     /*background-attachment: fixed;*/
     padding: 20px;
     margin: 20px;
     position: relative;
     background-size: cover;
-    
-}
-
+}    
 
 footer{
-    background-color: red;
-    color: aliceblue;
     text-align: center;
 }
-.contacto{
-    width: 30px;
-    padding: 10px;
 
+.contacto{
+    width: 50px;
+    padding: 10px;
+    margin: 15px;
 }
+
 .logonombre{
-    width: 200px;
+    width: 250px;
 }
 
 #padreDePropDestacadas{
@@ -106,5 +87,4 @@ footer{
     padding: 10px;
     margin: 20px;
     display: flex;
-   
 }

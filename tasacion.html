@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DAMIAN NAZARENO Propiedades</title>
+    <link rel="icon" href="imagenes/casadorada logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="styleCSS/style.css">
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+
+    <!-- Versión más reciente de Bootstrap desde CDN -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul class="nav nav-pills nav-fill">
+                <li class="nav-item">
+                  <a class="nav-link" style="color:aliceblue; font-weight:bold;" href="index.html" >Nosotros</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" style="color:aliceblue; font-weight:bold;" href="lote.html">Lotes</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" style="color:aliceblue; font-weight:bold;" href="casa.html">Propiedades</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" style="color:black; font-weight:bold; background-color :aliceblue; border:2px solid red;" href="contacto.html">Tasaciones</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" style="color:aliceblue; font-weight:bold;" href="contacto.html">Contactanos</a>
+                </li>
+            </ul> 
+        </nav>
+    </header>
+
+
+
+    <div class="cuerpoMedio">
+        <div class="body">
+            <form><br>
+                <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label">Nombre y Apellido</label>
+                    <input type="text" class="form-control" id="examplename">
+                </div><br>
+
+                <div class="mb-3">
+                  <label for="exampleInputEmail1" class="form-label">Email</label>
+                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                  <div id="emailHelp" class="form-text">Nunca compartiremos tu correo electrónico con nadie más.</div>
+                </div><br>
+
+                <div class="mb-3">
+                    <label for="celular" class="form-label">Numero de Celular</label>
+                    <input type="number" class="form-control" id="celular">
+                </div><br>
+
+                <div class="mb-3">
+                  <label for="motivo" class="form-label">selecciona porfavor</label>
+                  <select name="motivo" class="form-control" id="">
+                    <option value="Contactanos">Contacto con agente personalizado</option>
+                    <option value="Tasaciones">Tasaciones</option>
+                  </select>
+                </div><br>
+
+                <div class="mb-3">
+                    <label for="exampleInputPassword1" class="form-label">Contanos que estas buscando</label>
+                    <textarea name="comentario" class="form-control" id="" rows="4"></textarea>
+                </div><br>
+
+
+                <div class="mb-3 form-check">
+                  <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                  <label class="form-check-label" for="exampleCheck1">Click para recibir ofertas inmobiliarias</label>
+                </div><br>
+
+
+                <div style="justify-content: center;">
+                <button type="submit" class="btn btn-primary" style="color:aliceblue; border:2px solid red; background-color: black;" >Enviar</button>
+                </div><br>
+            </form>
+
+        </div>
+    </div>
+
+
+    <footer>
+      <img src="imagenes/casadorada logo.png" alt="logo" class="logonombre"><br>
+      
+      <a href="https://api.whatsapp.com/send?phone=543517027768&text=Hola%20Damián,%20me%20gustaria%20saber" target="_blank"><img src="imagenes/WhatsApp.svg.webp" alt="contactar por WhatsApp" class="contacto"></a>
+      <a href="https://www.youtube.com/@damiangomez333?si=7roMVpQ4KexD0OZg" target="_blank"><img src="imagenes/YouTube_social_white_square_(2017).svg.webp" alt="Visitar canal de YouTube" class="contacto"></a>
+      <a href="https://www.facebook.com/damian.gomez.5872?mibextid=gik2fB" target="_blank"><img src="imagenes/Facebook.png" alt="Visitar perfil de Facebook" class="contacto"></a>
+      <a href="https://www.instagram.com/damian.ngh/" target="_blank"><img src="imagenes/Instagram.svg.webp" alt="Visitar perfil de Instagram" class="contacto"></a>
+  </footer>
+  <!-- Scripts de Bootstrap al final del body -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="/javascript/javaScript.js"></script>
+  
+  <script src="enviar_formulario.js"></script>
+</body>
+</html>

@@ -1,0 +1,123 @@
+[
+    {
+        "id":"info001",
+        "titulo":"Lote en Countries de Pilar",
+        "imagen":"../imgProp/loteDelPilar.JPEG",
+        "condicion":"venta",
+        "propiedad":"lote",
+        "ubicacion":"Countries del pilar",
+        "metrosTotal":800,
+        "metrosCubiertos":0,
+        "descripcion":"Hermoso lote con estacios abiertos, al frente de un polideportivo. a 20´ del centro",
+        "servicios":"agua, luz, gas, internet",
+        "asfalto":true,
+        "precio":135
+    },
+
+    {
+        "id":"info002",
+        "titulo":"",
+        "imagen":"",
+        "condicion":"alquiler",
+        "propiedad":"casa",
+        "ubicacion":"barrio",
+        "metrosTotal":320,
+        "metrosCubiertos":100,
+        "descripcion":",,,,,,,,,",
+        "servicios":"agua, luz, gas, internet",
+        "asfalto":false,
+        "precio":125
+    },
+
+    {
+        "id":"info003",
+        "titulo":"Departamento en Carlos Paz",
+        "imagen":"../imgProp/deptoCarlosPaz.JPEG",
+        "condicion":"venta",
+        "propiedad":"departamento",
+        "ubicacion":"Carlos Paz, centro",
+        "metrosTotal":310,
+        "metrosCubiertos":235,
+        "descripcion":"Increible vista al lago, en el centro de la ciudad 2 habitaciones, cocina-comedor, terraza, pileta para todo el edificio",
+        "servicios":"agua, luz, gas, internet",
+        "asfalto":true,
+        "precio":87
+    },
+
+    {
+        "id":"info004",
+        "titulo":"",
+        "imagen":"",
+        "condicion":"venta",
+        "propiedad":"casa",
+        "ubicacion":"barrio",
+        "metrosTotal":200,
+        "metrosCubiertos":100,
+        "descripcion":",,,,,,,,,",
+        "servicios":"agua, luz, gas, internet",
+        "asfalto":true,
+        "precio":125
+    },
+
+    {
+        "id":"info005",
+        "titulo":"Lote en Countries de Pilar",
+        "imagen":"",
+        "condicion":"alquiler",
+        "propiedad":"casa",
+        "ubicacion":"barrio",
+        "metrosTotal":200,
+        "metrosCubiertos":100,
+        "descripcion":",,,,,,,,,",
+        "servicios":"agua, luz, gas",
+        "asfalto":true,
+        "precio":125
+    },
+
+    {
+        "id":"info006",
+        "titulo":"",
+        "imagen":"",
+        "condicion":"venta",
+        "propiedad":"casa",
+        "ubicacion":"barrio",
+        "metrosTotal":200,
+        "metrosCubiertos":100,
+        "descripcion":",,,,,,,,,",
+        "servicios":"agua, luz, gas, internet",
+        "asfalto":true,
+        "precio":125
+    },
+
+    {
+        "id":"info007",
+        "titulo":"Lote en Countries de Pilar",
+        "imagen":"",
+        "condicion":"alquiler",
+        "propiedad":"casa",
+        "ubicacion":"barrio",
+        "metrosTotal":200,
+        "metrosCubiertos":100,
+        "descripcion":",,,,,,,,,",
+        "servicios":"agua, luz, gas",
+        "asfalto":true,
+        "precio":125
+    },
+
+    {
+        "id":"info008",
+        "titulo":"Propiedad en Cerro de las Rosas",
+        "imagen":"../imgProp/casaCerro.JPEG",
+        "condicion":"venta",
+        "propiedad":"casa",
+        "ubicacion":"barrio",
+        "metrosTotal":360,
+        "metrosCubiertos":188,
+        "descripcion":"Bella propiedad con amplios espacios interiores, con diferentes niveles de 2 plantas y entrepiso, 4 habitaciones, 2 baños, amplia cocina, comedor y estar. tiene una terraza, garage y pileta",
+        "servicios":"agua, luz, gas, internet",
+        "asfalto":true,
+        "precio":240
+    }
+
+
+]
