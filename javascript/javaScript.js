@@ -17,18 +17,24 @@ document.getElementById('form')
     .then(() => {
       btn.value = "Correo electrónico enviado con éxito";
       alert('Enviado!');
-      limpiarFormulario();
 
     }, (err) => {
       btn.value = 'Enviando mail';
       alert(JSON.stringify(err));
     });
-  });
+    
+    //alert('Enviado!');
+    function limpiarFormulario() {
+      document.getElementById('form').reset();
+      formulario.reset();
+    };
+
+    limpiarFormulario();
 
 
-  function limpiarFormulario() {
-    document.getElementById('form').reset();
-    formulario.reset();
-  };
+});
+
+
+ 
    
 
