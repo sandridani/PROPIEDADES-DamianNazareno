@@ -1,22 +1,34 @@
-// Configura EmailJS con tu usuario y plantilla de correo electrónico
-emailjs.init("user_tuCodigoDeUsuario");
+///const { format } = require("express/lib/response");
 
-document.getElementById("miFormulario").addEventListener("submit", function(event) {
-  event.preventDefault(); // Evita el envío estándar del formulario
+ 
+const btn = document.getElementById('button');
 
-  // Obtiene los valores del formulario
-  var formData = new FormData(event.target);
-  var data = {};
-  formData.forEach(function(value, key){
-      data[key] = value;
+document.getElementById('form')
+.addEventListener('submit', function(event) {
+   event.preventDefault(); // Evita el envío estándar del formulario
+
+   btn.value = 'Sending...';
+
+   const serviceID = 'default_service';
+   const templateID = 'template_945g7ot';
+
+   // Envía el formulario a través de EmailJS
+   emailjs.sendForm(serviceID, templateID, this)
+    .then(() => {
+      btn.value = "Correo electrónico enviado con éxito";
+      alert('Enviado!');
+      limpiarFormulario();
+
+    }, (err) => {
+      btn.value = 'Enviando mail';
+      alert(JSON.stringify(err));
+    });
   });
 
-  // Envía el formulario a través de EmailJS
-  emailjs.send("service_tuCodigoDeServicio", "template_tuCodigoDePlantilla", data)
-    .then(function(response) {
-      console.log("Correo electrónico enviado con éxito:", response);
-    }, function(error) {
-      console.log("Error al enviar el correo electrónico:", error);
-    });
-});
+
+  function limpiarFormulario() {
+    document.getElementById('form').reset();
+    formulario.reset();
+  };
+   
 
